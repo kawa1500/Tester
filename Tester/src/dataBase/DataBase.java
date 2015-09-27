@@ -13,9 +13,11 @@ public class DataBase {
 	Statement 		statement;
 	String 			DB_URL 					= "jdbc:sqlite:pomiar.db";
 	boolean			statusPolaczenia		= false;
+	public 			Funkcje			funkcja;
 	
 	public DataBase() {
 		polacz();
+		funkcja = new Funkcje(this);
 	}
 
 	public boolean polacz(){
