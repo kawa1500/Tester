@@ -1,12 +1,10 @@
 package modele;
 
-import java.util.Date;
-
 public class GroupModel {
 
 	private 		int			idGrupy;
 	private 		String 		nazwa;
-	private 		Date		dataUtworzenia;
+	private 		String		dataUtworzenia;
 	
 	public GroupModel() {
 		// TODO Auto-generated constructor stub
@@ -16,7 +14,7 @@ public class GroupModel {
 	{
 		this.idGrupy=id;
 		this.nazwa=nazwa;
-		this.dataUtworzenia=new Date(data);
+		this.dataUtworzenia=data;
 	}
 	public void setId(int id){
 		this.idGrupy=id;
@@ -34,11 +32,11 @@ public class GroupModel {
 		return this.nazwa;
 	}
 	
-	public void setDataUtworzenia(Date data){
+	public void setDataUtworzenia(String data){
 		this.dataUtworzenia=data;
 	}
 	
-	public Date getDataUtworzenia(){
+	public String getDataUtworzenia(){
 		return this.dataUtworzenia;
 	}
 }

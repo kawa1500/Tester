@@ -8,7 +8,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		DataBase baza	= new DataBase();
-		baza.funkcja.dodajGrupe("testowa grupa");
+		baza.funkcja.dodajPomiar("pomiar testowy",1);
 	}
 
 }

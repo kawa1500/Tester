@@ -11,7 +11,7 @@ public class DataBase {
 
 	Connection 		connection;
 	Statement 		statement;
-	String 			DB_URL 					= "jdbc:sqlite:pomiar.db";
+	String 			DB_URL 					= "jdbc:sqlite:tester.db";
 	boolean			statusPolaczenia		= false;
 	public 			Funkcje			funkcja;
 	
@@ -45,4 +45,5 @@ public class DataBase {
 		}	
 		return statusPolaczenia;
 	}
+	
 }
